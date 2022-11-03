@@ -1,0 +1,9 @@
+server:
+  port: 8280
+
+spring:
+  application:
+    name: servicio-formacion
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
