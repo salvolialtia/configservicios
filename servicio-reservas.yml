@@ -1,11 +1,11 @@
 server:
-  port: 8380
+  port: 8580
 
 spring:
   datasource:
     dbcp2:
       driver-class-name: com.muysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/viajes?serverTimezone=UTC
+    url: jdbc:mysql://192.168.1.130:3306/viajes?serverTimezone=UTC
     username: curso
     password: curso
   jpa:
@@ -20,5 +20,5 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://172.27.31.177:8761/eureka
     register-with-eureka: true
